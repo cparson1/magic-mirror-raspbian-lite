@@ -9,7 +9,7 @@ HOME_DIR=$(pwd)
 MM_RASP_LITE="magic-mirror-raspbian-lite"
 MAGIC_MIRROR_RASP_LITE_DIR="$HOME_DIR/$MM_RASP_LITE"
 
-MAGIC_MIRROR_NAME="magic-mirror"
+MAGIC_MIRROR_NAME="MagicMirror"
 MAGIC_MIRROR_DIR="$HOME_DIR/$MAGIC_MIRROR_NAME"
 
 MAGIC_MIRROR_APP_DIR="$HOME_DIR/magic-mirror-app"
@@ -18,7 +18,7 @@ MAGIC_MIRROR_SETUP=true
 MAGIC_MIRROR_HOST="localhost"
 MAGIC_MIRROR_PORT="8080"
 
-MAGIC_MIRROR_RASP_LITE_GIT='https://github.com/pureartisan/magic-mirror-raspbian-lite.git'
+MAGIC_MIRROR_RASP_LITE_GIT='https://github.com/cparson1/magic-mirror-raspbian-lite.git'
 MAGIC_MIRROR_GIT='https://github.com/MichMich/MagicMirror'
 
 REGEX_NUMERIC_ONLY='^[0-9]+$'
@@ -180,7 +180,7 @@ export MAGIC_MIRROR_PORT
 . $MAGIC_MIRROR_RASP_LITE_DIR/setup/run.sh
 . $MAGIC_MIRROR_RASP_LITE_DIR/setup/cleanup.sh
 
-info 'Rebooting now...'
-sudo reboot
+info 'Reboot now...'
+# sudo reboot
 
 # end of the script
