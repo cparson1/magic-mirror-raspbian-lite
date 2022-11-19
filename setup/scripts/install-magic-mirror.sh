@@ -17,8 +17,4 @@ npm install
 
 info 'Setting up default config'
 # Copy default sample file
-if [[ -f "~/config.js" ]] then
-  cp ~/config.js config/config.js
-else
-  cp config/config.js.sample config/config.js
-fi
+cp config/config.js.sample config/config.js
